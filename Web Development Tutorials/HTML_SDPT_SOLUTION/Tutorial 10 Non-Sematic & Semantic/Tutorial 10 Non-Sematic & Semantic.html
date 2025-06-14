@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Non-Semantic and Semantic Elements</title>
+</head>
+<body>
+    <!-- Non-Sematic Elements -  Elements that have NO clear depiction of its content, it is typically an element with a generic tag name that can contain anything.
+                            -Does not clealry define what their "content" is about.--> 
+     <!-- <span> - Marks up a part of a text. 
+         <i> - Italicizes part of a text. 
+         <b> - Bolds a part of a text. 
+        <div> - Used a container of a Elements 
+              - Ginagamit para maging malinis, para magrupo yung elemens, at para malinis.--> 
+    <!-- Class and ID Attribute. 
+        - Are used to identify elements. 
+        - Can be applied to any elements. 
+        - Are used to label non-semantic elements. 
+        - Used in styling or modifying elements. -->
+    <!-- ID - are used to indetify as a single element in our HTML Document.
+            - Used to change its design or modify and retrieve the element;s values.
+            - Same IDs should NOT be used on multiple elements. --> 
+    <!-- Class - Are used to indetify multiple elements in our HTML Dcouments
+               - Particularly repetitive elements that may also be used to change its design or modify and retrieve the element's values - Classes can be used on multiple elements.--> 
+    <!-- Ang ID ay isang beses lang pwede gamitin. 
+        Ang class pwede gamitin ng maraming element. -->
+ 
+        <h1>Example of Non-Semantic</h1> 
+
+        <div id="nav">
+            <a href="about.html">About</a>
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </div> 
+          
+        <div id="header"> 
+             <h1>SDPT Solutions</h1>
+             <p>A <span class="Brand" style="color: red;"></span> Tutorial Channel.</p>
+        </div> 
+
+            
+        <div class="section">
+            <h3>C++ Tutorial</h3> 
+            <p>Talks about Basics of C++</p>
+        </div> 
+    
+         <div class="section">
+            <h3>C++ Tutorial</h3> 
+            <p>Talks about Basics of C++</p>
+        </div>  
+    
+        <div id="footer">
+           <p>&copy; Web Development Journey 2025</p> 
+        </div>
+    <!-- Semantic Elements - Elements that clearly describes what it contains, to both the developer, and the browser. 
+                       - These are elements which have specific tag names.
+                       - It does not change any styling on the actual documents. It is used to structure the website in a cleaner way. 
+                       - Eto yung mga tags na naiintidihan na agad natin kung titignan. 
+                       - Clearly defines what their content is about-->
+    <!-- <nav> - Defines a Navigation. 
+        <header> - Defines an Header.
+        <footer> - Defines an Footer.
+        <section> - Defines an Section. 
+        <article> - Defines an Antircle 
+        <aside> - Defines a content on the side.--> 
+    <h1>-----------------------------</h1>
+     <h1>Example of Semantic</h1> 
+
+       <nav>
+            <a href="about.html">About</a>
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+       </nav>
+        
+   
+        <header>
+            <h1>SDPT Solutions</h1>
+             <p>A <span class="Brand" style="color: red;"></span> Tutorial Channel.</p>
+        </header>
+    
+        <section>
+          
+            <h3>C++ Tutorial</h3> 
+            <p>Talks about Basics of C++</p>
+        </section>
+        
+        <section>
+            <h3>C++ Tutorial</h3> 
+            <p>Talks about Basics of C++</p>
+        </section>
+    
+        <footer>
+               <p>&copy; Web Development Journey 2025</p> 
+        </footer>
+    <!-- Ang semantic at non-semantic ayt walang pinagkaiba sa output, luminis kasi pag nakasemantic. --> 
+     <!-- Kahit semantic na siya, pwede  pa rin naman lagyan ng id -->
+</body>
+</html>

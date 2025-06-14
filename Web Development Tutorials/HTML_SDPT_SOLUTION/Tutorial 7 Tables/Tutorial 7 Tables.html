@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title> 
+
+    <style>
+        table,tr, th, td{
+            border-width: 1px; 
+            border-color: black;
+            border-style: solid;
+        } 
+        caption{ text-align: center;
+            caption-side: bottom;} 
+        thead{ background-color: yellow;}
+        tfoot{ background-color: blue;}
+    </style>
+</head>
+<body>
+    <!-- Table tags are used in combinaion wih oher elements like <tr>, <th>, <th> and etc-->
+    <!-- <th> = table head for title--> 
+    <!-- tr = table row --> 
+    <!-- td = table data --> 
+    <h1>Format</h1>
+        <table>  
+          <tr> <!--ROW 1--> 
+            <th>Title 1</th> <!--Column 1-->
+            <th>Title 2</th> <!--Column 2-->
+          </tr> 
+          <tr> <!--ROW 2--> 
+            <td>Content 1</td>
+            <td>Content 2</td>
+          </tr>
+      </table>
+
+    <h1>Example 1</h1>
+        <table> 
+          <tr> 
+            <th>#</th>
+            <th>Studen Number</th>
+            <th>Full Name</th> 
+          </tr> 
+          <tr>
+            <th>1</th>
+            <td>2021******</td>
+            <td>Dion Severilo</td>
+          </tr>
+           <tr>
+            <th>2</th>
+            <td>2021******</td>
+            <td>Adi Salvania</td>
+          </tr>
+      </table>  
+    <!--<th> and <td> Element Attributes -->
+    <!-- colspan - Specifies he column span of the cell. --> 
+    <!-- rowspan - Specifies the row span of the cell. --> 
+     <!-- Column - pahiga --> 
+    <!-- Row - patayo --> 
+    <!-- Kung nag set ka ng 100 sa span mo, hindi ito uusad kung hindi naman nadagdagan ang ibang column or row mo. --> 
+     <!-- Caption Element -  Indicates a caption
+                             - default are centered aligned on the top of the table.-->
+     
+     <!-- <colgroup> - specifies a group of one or more columns in a table for formatting.
+          <col> - specifies column properties for each column within a <colgroup> element. 
+           <thead> - groups the header content in a table.
+            <tbod> - groups the body content in a table. 
+            <tfoot - groups he footer content in table.
+             -->
+    <h1>Example 2</h1> 
+      <table>  
+            <caption>First Semester</caption> 
+         <thead>
+             <tr> 
+                <th rowspan="2">Names</th>
+                <th colspan="3">Subjecs</th>
+
+            </tr>
+             <tr>
+                <th>C++</th>
+                <th>Java </th>
+                <th>Python</th>
+            </tr> 
+         </thead>
+
+         <tbody>
+           <tr>
+            <td>Dion</td>
+            <td>90</td>
+            <td>90</td>
+            <td>95</td>
+          </tr>
+         </tbody>
+        <tfoot>
+            <tr> 
+                <td colspan="4">Demo Row</td>
+            </tr>
+        </tfoot>
+      </table> 
+</body>
+</html>

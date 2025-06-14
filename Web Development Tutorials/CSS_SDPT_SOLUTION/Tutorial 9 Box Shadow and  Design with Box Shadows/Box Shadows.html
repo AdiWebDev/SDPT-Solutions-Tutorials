@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bow Shadows</title> 
+    <!-- CSS Box Shadow -->
+     <!-- Create a shadow around an element. 
+          This gives a 3D feeling to our desing --> 
+
+          
+    <!-- Moest easiest way of adding a box-shadow:
+        box-shadow:x-off y-off blur  spread color; --> 
+    <!-- negative value - sa left and top.
+        positive value - sa  right and bottom. -->
+        <style> 
+           div{  
+              height: 200px;
+                width: 200px;
+            margin: 50px; 
+
+           } 
+            .normal{ 
+              
+                box-shadow:  5px 5px rgba(0, 0, 0, 1);
+               
+            }  
+            /* box-shadow: x-off y-off blur color; */
+            /* Softens (smudges) the shadow edges */ 
+            /* kinakalat niya yung shadow */
+            .blur{ 
+
+                box-shadow:  5px 5px 20px  rgba(0, 0, 0, 1);
+            }  
+
+            /* box-shadow: x-off y-off blur spread color */ 
+            /* 	Expands or contracts the size of the shadow area */ 
+            /* Nilalawakan yung shadow */
+            .spread{ 
+                 box-shadow:  5px 5px 20px  1px rgba(0, 0, 0, 1); 
+                 border-radius: 20px;
+            }  
+
+             /* box-shadow: x-off y-off blur spread color inset */
+            .inset{ 
+                     box-shadow:  2px 2px  1px  5px rgba(0, 0, 0, 0.2)  inset; 
+                     border-radius: 20px;
+            }
+        </style>
+</head>
+<body>
+     <div class="normal">Normal</div>  
+     <!-- paglabo ng shadow -->
+     <div class="blur">Blur</div> 
+
+     <div class="spread">Spread</div> 
+      
+
+     <!-- magiging nasa loob yung shadow niya -->
+     <div class="inset">Inset</div>
+</html>

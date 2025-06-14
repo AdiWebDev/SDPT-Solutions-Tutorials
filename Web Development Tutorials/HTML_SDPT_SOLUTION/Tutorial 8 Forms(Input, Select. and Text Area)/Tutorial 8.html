@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>   
+
+
+<!-- Form - are used in combinaion wih other elements like <input>, <texare> and <select> --> 
+<!-- Action - Specifies the action tao perform after submitting the form.
+     Method - Specifies the type of method that the form will use "GET" or "POST"
+     Target - Specifies where the result will display after submitting the form. -->
+<!-- Input Element - Indicates a Textfield, Radiobutton, Checkbox, etc.  --> 
+
+<!-- <label> element - Indicates a label an <input>, <textarea> and <Select> element.
+   
+                  - The <label> element "for" attribute uses an id value to indicate what element they are bound to                
+-->
+
+
+<!-- <input> Element Text Field Types -->
+ <!-- text - A normal text field. 
+      email - A text field with an email address validation.
+       password - A text field  that hides the text in it.
+       number - A text field that only allows numbers. 
+       tel - A text field that has a telephone number  format validaion. 
+       search - A text field form seaching. 
+       url - A text field with url validaion.-->
+
+
+<!-- <input> Element Attributes: General Attributes -->
+<!-- type - Specifies the type of input. 
+      name - Specifies the name of the input. 
+            - You need this for retrieving value.
+      value - Specifies the default value of the input. 
+            - Pag naglagay ka rito, magkakaroon ng laman yung input natin
+      required - Specifies that the field is required. 
+      disabled- Specifies that the field is disabled. 
+               - Hindi ka makakapag-input kung naglagay ka nito.
+      readonly - Specifies that the field can only be read. 
+               - May value siya pero hindi mo siya ma-e-edit.--> 
+
+
+ <!--  <input> type= "text"> Attributes -->
+  <!-- placeholder - Placeholder text shown in the textfield.  
+                   - Parang label lang sa input na yon.
+       minilengh - Minimum number of characters allowed. 
+                 - Kailangan mo na makainput ng char na minimum para makapagsubmit.
+       maxlength - Maximum number of characters allowed.  
+                 - Kunware maximum of 3 lang chars lang sinet mo. If abot na ang maximum, hindi ka na makakapag-input.
+       size - Adjust the size of the textfield. --> 
+  
+
+         <h4>Example of disabled and value</h4>
+          <form>
+             <input type="text" disabled  value="Adi is the default value"/>
+          </form>
+
+          <h4>Example of readonly and value</h4>
+          <form>
+             <input type="text" readonly  value="Adi is the default value"/>
+          </form>
+
+          <h4>Example of required</h4>
+          <form>
+             <input type="text" required /> 
+             <input type="submit">
+          </form>
+  
+
+
+       <h4>INPUT TYPE = "text" EXAMPLE</h4> 
+         <h4>Example of placeholder</h4>   
+          <form>
+             <input type="text" placeholder="Enter text" /> 
+          </form> 
+
+          <h4>Example of minilength</h4> 
+          <form>
+             <input type="text" minlength="3"  required/>  <br>
+             <input type="submit"/>
+          </form>  
+
+          <h4>Example of maxlength</h4>
+          <form>
+             <input type="text" maxlength="3"  required/>  <br>
+             <input type="submit"/>
+          </form> 
+
+         
+          <form action="">
+         <h4>INPUT TYPE ="email" EXAMPLE</h4>
+         <input type="email" placeholder="Emaail"  size="40%">
+         <h4>INPUT TYPE ="password" EXAMPLE</h4>
+         <input type="password" placeholder="Password"  size="40%">
+            <input type="submit">
+         
+          </form>
+      <!-- step - Indiates the sstep count of the number 
+                  Kung 5 ang sinet mo, by 5 ang bilang mo.- -->
+            <h4>Input number example</h4>
+       <input type="number" step="5"><br>  
+
+
+
+
+       
+<!-- 
+<Input> Element Date / Time Types
+Sa browser lang naiiba ang format, minsan nagiging MM-DD-YYYY.  Pero kahit ganon YYYY-MM-DD ang sundin mo.
+
+date  - A field for inputting the date/month/year. 
+          - YYYY-MM-DD(2025-12-31)
+
+datetime-local - A field for inputting the date/month/year and time.                          -YYYY-MM-DDThh.mm(2025-12-31T13:30)
+
+month - A field for inputting the month and year.
+           - YYYY-MM(2025-12)
+
+week - A field for inputting the week and year.
+          - YYYY-Www(2025-W36)
+time - A field for inputting the time.
+        - hh:mm (12:46) 
+        - hh - Hour.
+        - mm - Minute.
+-->
+ <!-- Date/ Time Attributes 
+min - Sets the minimum date/time the user can pick
+max - Sets the maximum date/time the user can pick.
+-->
+ 
+   <h4>INPUT TYPE = "date" EXAMPLE</h4>   
+   <!-- the default value is January 23, 2025 -->
+   <input type="date" value="2025-01-23"> <br>  
+   <!-- example of min and max date --> 
+   <input type="date" min="2025-06-08" max="2025-06-10"> <br>  
+   <input type="datetime-local"> <br>
+   <input type="month"><br>
+   <input type="week"> <br>
+   <input type="time"><br>
+
+
+
+<!-- 
+Element Button Type
+
+file - A button that allows selection of files from local.
+checkbox - A toggleable button, allows multiple selection.
+radio - allows only one selection.
+button - classic button.
+reset - resets all the value of the form.
+submit - submitting the form. 
+-->
+
+
+<!-- file attributes
+accept - specifies the files accepted
+              - nilalagay dito mga MIME-Type: png, jpg, mp3 mga ganun
+              -  sa backend ginagawa dapat ang paglilimit nito. 
+              -  accept = "image/jpg" if gusto mo lahat ng image format: accept = "image/*"
+
+------------
+multiple - specifies if multiple files are accepted.
+
+----------
+capture -specifies whuch camera to use for capture image or video data.
+             - sa mobile lang gumagana pero baka hindi na rin gumagana dahil matagal na to and bago na ang mga cellphone mo
+-->
+   <h4>input type ="file" example</h4>
+   <input type="file" accept="image/png" /> <br>
+
+   <h4>input type ="file" multiple example</h4>
+   <input type="file" accept="image/png" multiple /> <br>
+      
+  
+
+   
+<!-- checkbox attributes 
+checked - specifies if the checkbox is checked by default.
+                - <input id = "apple" type="checkbox" checked/> 
+                - <label for="apple"> Apple</label>
+                - maganda ang label para pag click mo para nagche-check kahit sa may text mo lang clinick. 
+                - magkakaroon na ng check agad sa output dahil sa attribute na 'checked'.
+        
+-->
+    <h4>input type = "checkbox" example</h4> 
+    <input type="checkbox" name="fruits"> Apple </input> 
+   <h4>input type = "checkbox"  checked example</h4> 
+    <input type="checkbox"  checked name="fruits"> Banana </input>  <br>  <br>
+
+
+<!--radio attributes
+ Radio Button  can be groupeb by specifying different radio button with the same name attribute.
+   - pwede mo rin gamitin ang 'checked'.
+
+Name - siya ang nagugrupo sa checkbox at radio button.
+
+ -->  
+      <h4>input type ="radio"  example</h4>
+      <input id = "yes" type="radio"  name="answer"/> 
+      <label for="yes"> Yes</label>
+      <input id = "no" type="radio"  name="answer"/> 
+      <label for="no"> No</label>
+      <input id = "maybe" type="radio"  name="answer"/> 
+      <label for="maybe"> Maybe</label> 
+      <br>
+
+
+<!-- button
+magkaiba ang submit at button lang
+magagamit mo lang to pag javascript na
+<input type="button"/> 
+-->
+
+<!-- reset
+
+<input type="reset"/>  - pag pinindot mo — ma-clear lang yung ininput mo.
+--> 
+      <h4>input type ="reset example</h4> 
+      <form target="_blank">   
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username" placeholder="Enter your username" size="20%">  <br>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" placeholder="Enter your password" size="20%">  <br>
+         <input type="submit" value="Login"> 
+         <input type="reset">
+         <br>
+
+      </form>
+<!-- 
+<input> Element Other Types>
+range - A field that lets you set a value uding a slider. 
+
+color - A field for selecting color.
+           - Ang inaaccept na value nito ay hex code.
+hidden - A field is not visible 
+
+-->
+
+<!--
+Range Attributes 
+ Step - Interval steps to take when changing the    
+            value of the slider. 
+Min - minimum value of the slider. 
+Max - Maximum value of the slider.
+--> 
+
+   <h4>input type ="range" example</h4>
+   <input type = "range"  value="5"  /> <br> 
+   <h4>input type ="color" example</h4>
+   <Input type = "color" value="#ffff00"/> <br>  
+   <h4>input type="hidden" example</h4>
+   <Input type ="text"/> <br>
+
+
+<!-- <textarea> Element - Indicates a text area
+- ginagamit for comments, essay, or kahit anong long text
+
+
+Attributes
+rows - Specifies the default number of lines in a text are.
+cols - Specifies the default width of a text area. 
+name - Specifies the name of the textarea.
+required - Specifies that the field are required.
+disabled- Specifies that the field is disabled. 
+readonly - Specifies that the field can only.
+placeholder - Placeholder text shown in the textfield.
+maxlength - Specifies the maximum number of characters allowed in the textarea.
+-->
+  <h4>textarea example</h4>
+<textarea rows="4" cols="50">
+    sample text lang to.
+</textarea>
+
+
+
+<!-- 
+<select> Element - Indicates a drop-down list. 
+- usedin combination with the <option> element.
+
+Attributes 
+multiple - Specifies if the user can select multiple in the list
+size - Specifies number of options visible on the drop-down.
+name - Specifies the name of the textare. 
+required - Specifies that the fields is required. 
+disabled - Specifies that the field is disabled. 
+form - Specifies the form it belongs to using the form's id.
+Example: 
+
+
+-->     
+<!-- <optgroup> element - indicates an item group in a drop-down list -->
+   <h4>select element example</h4>
+   <select name= "members"> 
+      <option value ="Adi"> Adi</option>
+      <option value ="Dion">Dion</option>
+      <option value ="Sev"> Sev </option>
+   </select> 
+
+
+
+     <h4>optgroup element example</h4>
+   <select name= "Politics">  
+      <optgroup label="President">
+            <option value="Marcos" disabled>Marcos</option>
+            <option value="Leni">Leni</option>
+      </optgroup> 
+      <optgroup label="Vice President">
+            <option value ="Duterte"> Duterte</option>
+            <option value ="Pangilinan">Pangilinan</option>
+      </optgroup>
+  
+   </select>
+<body>
+
+</body>
+</html>

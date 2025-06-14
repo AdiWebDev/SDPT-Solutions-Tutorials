@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial 4: Images and File Path</title>
+</head>
+<body>
+        <!--<img> - Para makapaglagay ng image --> 
+        <!-- src - Indicates the File Path to load the image -->
+        <!-- Width - Indicates the Width -->
+        <!-- Height - Indicates the Height -->    
+        <!-- Alt attribute - Shows the text when the image failed to load -->
+        <!-- If isa lang nilagay mo sa sa size; Width = "200", automatic na sa height ay 200 din  -->
+
+        <!-- <h1>Pixel</h1> 
+        <img src="pets.JPG" alt="Pets" width="200" height="200"/>  --> 
+
+        <!-- Kahit i-zoom in or out mo siya mananatili siya sa 50% ng screen na meron ka -->
+         <h1>img/name.png sample</h1>
+        <img src="img/pets.JPG" alt="Pets" width="50%" height="50%" /> 
+
+        <!-- Image Links - Surround the Image with <a>/anchor tag to make it clickable --> 
+        <h1>Image Links sample</h1> 
+        <a href="https://static.vecteezy.com/system/resources/previews/017/421/168/original/i-miss-you-3d-word-text-png.png" target="_top"> 
+            <img src="img/pets.JPG" alt="Error">
+        </a>  
+
+           <h1>../name.png sample</h1>  
+           <!-- pag nasa labas pa ../../image.png --> 
+            <!-- if nasa ibang folder ../folder/image.png -->
+        <img src="../Nasa labas na image.JPG" alt="Error"> 
+        
+   
+        <!-- File Paths -->
+         <!-- Gumagana rin ang file path sa anchor element/a tag -->
+        <!-- name.png- The File is in the same folder -->
+        <!-- folder/name.png- The File is in the folder images in the current folder--> 
+         <!-- /folder/name.png - The File is in the folder images at the root of the current web -->
+        <!-- ../name.pnh - The File in the folder one level up from the current folder; magba-back ka ng isa-->
+        <!-- Absolute Path -  The File's Path is fully specified -->
+</body> 
+  
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial 5: Audio and Video </title>
+</head>
+<body>
+      <!-- Type Attribute - Specifies the MIME-Type of the Source --> 
+       <!-- MIME-Type - ginagamit para sa file na guso mong basahin. -->
+    <!-- Audio Element - used to play audio files. --> 
+    <!-- Controls - Shows controls like play, pause.--> 
+    <!--  Autoplay - Play audio automatically when loaded--> 
+    <!-- Muted - The Audio would be muted by default. -->
+    <!-- Loop = Makes the audio replay infinit times. -->  
+    <!--  Ito naman ginagamit para if di gumana yung unang audio ma back up ka.
+    <audio controls> 
+        <source src ="audio/Sinderela.mp3">
+        <source src ="audio/Sinderela.mp3">
+    </audio>
+     --> 
+    <!-- pwede mo hindi ilagay yung controls tapos naka autoplay para pagbukas ng 
+     browser tumugtog siya at invisible. -->
+    <audio src="audio/Sinderela.mp3"  controls  autoplay  >
+        Browser does not support the audio tag</audio> 
+
+
+    <!-- Pwede ka mag-set ng resolution: width and heigh attribute.-->
+    <video src="video/Sinderela.mp4" width="200"controls autoplay muted> Browser does no support the video tag</video>
+</body>
+</html> 

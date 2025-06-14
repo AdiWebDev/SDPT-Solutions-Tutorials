@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title> 
+    <!--CSS Box Model -->  
+    <!-- Content - anything inside an element can be considered a content. 
+         Padding - invisible spacing between content and border.
+         Border - is the linig.
+         Margin - invisible space between the border and other elements. 
+         Padding ay sa loob ng box ang space. Margin sa labas ng box-->  
+         <!-- Default margin ng model ay 8px -->
+
+    <!-- Border - visible line that seperates the content and other elements --> 
+    <!-- Border Styles - here is the list of diffferent styles of the border. --> 
+    <!-- Bprder Stles Values: 
+        1. dotted - Dotted Lines.
+        2. dashed - Broken Lines. 
+        3. solid  - Solid Line. 
+        4. double - Double Lines. 
+        5. groove - 3D Grooved Border.
+        6. ridge - 3D Ridged Border.
+        7. inser - 3D Debossed Border. 
+        8. outset - 3D Embossed Border. --> 
+
+        <!-- Border Controls - can be styled differently on each side. 
+         1. border-top. 
+         2. border-right.
+         3. border-bottom.
+         4. border-left. --> 
+
+         <!-- Border Smoothness - can become rounder to achieve a moderm feeling.
+        1. border-radius -->
+         <style> 
+            body{ 
+                margin: 0;
+            }
+            p{ 
+                padding: 10px; 
+             
+               
+                background-color: powderblue;
+            }  
+            #padding-example{ 
+                padding-top: 20px; 
+                padding-right: 30px ;
+                padding-bottom: 30px;
+                padding-left: 60px;
+            }   
+            /* padding: y-padding x-padding 
+               padding: 10px 25ppx */
+            
+
+            /* shorthand padding */ 
+            /* clockwise ang ikot */
+            /* padding: top right bottom left;
+               padding: 5px 10px 5px 10px; */
+
+            /* Border Example */
+            /* ORDER DOES NOT MATTER */
+            .dotted{  
+                border: 2px dotted black;
+            }   
+            .dashed{ 
+                border: 2px dashed black;
+            } 
+            .solid{ 
+                border: 2px solid black;
+            } 
+            .double{ 
+                border: 5px double black;
+            } 
+            .groove{ 
+                border: 5px groove black;
+            } 
+            .ridge{ 
+                border: 5px ridge black;
+            } 
+            .inset { 
+                border: 5px inset black;
+            }
+            .outset { 
+                border: 5px outset black;
+            } 
+            .controls{ 
+                border-top: 2px solid black;
+                border-right: 3px dashed black;
+                border-bottom: 5px groove black;
+                border-left: 6px double black; 
+            }
+            .radius{ 
+                border: 2px solid black; 
+                border-radius: 20px;
+            } 
+
+
+            #margin-example{ 
+                /* margin-top: 20px; 
+                margin-right: 30px ;
+                margin-bottom: 30px;
+                margin-left: 60px;  */
+
+                /* margin: y-margin x-margin  */
+               margin: 10px 25px;
+
+                /* shorthand margin */ 
+                /* clockwise ang ikot */
+                /* margin: top right bottom left;
+                margin: 5px 10px 5px 10px; */
+            }    
+        
+            
+
+           
+
+         </style>
+</head>
+<body>
+        <p>Box Model Example</p>  
+        <p id="padding-example">Padding Example</p>  
+        <p class="dotted">Border Dotted Example</p> 
+        <p class="dashed">Border Dashed Example</p>
+        <p class="solid">Border Solid Example</p>
+        <p class="double">Border Double Example</p>
+        <p class="groove">Border Groove Example</p>
+        <p class="ridge">Border Ridge Example</p>
+        <p class="inset">Border Inset Example</p>
+        <p class="outset">Border Outset Example</p>
+        <p class="controls">Border Control Example</p> 
+        <p class="radius">Border Radius Example</p>     
+        <p id="margin-example">Margin Example</p>  
+</body>
+</html>

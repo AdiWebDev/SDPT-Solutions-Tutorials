@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selectors</title> 
+
+
+      <!-- Selectors - used to find the HTML elements that we want to style or design using CSS. 
+      Selectors can select an number of HTML elements and apply a certain style for them. --> 
+
+      <!-- Simple Selectors 
+      Select elements by using either their: 
+      Tag Name - Name of the HTML Element. 
+      Class Name - General Name assigned to Elements. 
+      ID - Unique Name assigned to an Element. 
+      -->
+
+      <!-- Use . to select the class name --> 
+     <!-- Use # to select the ID-->
+    
+
+     <style> 
+    /*Tag Name Example*/ 
+    /* Lahat ng kipapalooban ng tag name na ito ay mababago ang design. */
+    body{
+        background-color: rgb(255, 255, 255);
+     }
+     h1 { 
+        color: blue;
+     }
+     /* Class Name Example */   
+     /* Kahit binago mo gamit ang tag name, kung naglagay ka naman sa class, class ang susundin niya  */ 
+     /*  Kunware yung <p> tag mo na yon may naka set na class. Kahit nilagay mong color blue sa may tag name, kung ang nasa class mo ay red, ang magiging value niya ay red. */
+     .comment{ 
+        color: red;
+     }     
+     /* ID Example */
+     /* Dito ay specific lang  */
+     /* Ito ang pinakamataas. so kahit  may class name siya, pero may id ka rin, id ang susundin niya. */ 
+
+     /* Kung id ang ginamit mo, okay lang maglagay ka ng class. Ang ID naman din ang susundin, kumbaga para lang maigrupo mo sila */
+     #commentbyid{ 
+        color: green;
+     } 
+     </style> 
+
+</head>
+<body>
+     <h1>Tutorial 3</h1>  
+
+    <p class="comment">Comment 1</p>
+    <p class="comment">Comment 2</p> 
+
+    <!-- Kung makikita mo rito may id at class ako. Ang sinusunod niyang kulay ay yung #commentbyid kaysa yung comment.  -->
+    <p id="commentbyid" class="comment">Comment gamit id</p>
+     
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{ 
+    margin: 0;
+} 
+
+nav{ 
+    width: 20%; 
+    height: 100%;  
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    /* para pag anag scroll nandon pa rin sa left side  */
+    position: fixed;  
+    top: 0;
+    left: 0;
+    background-color: #2d4f2b ;  
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+} 
+
+.brand-container{
+    text-align: center; 
+    color: white;
+    padding: 10% 0;
+   
+}
+.brand-title{
+    margin:0; 
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+
+.link{
+    display: block; 
+   text-decoration: none;  
+   padding: 2% 5%; 
+   color: white; 
+   margin: 2% 0;  
+   transition: 0.5s;
+   font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.link:hover{ 
+    color: #2d4f2b;
+    background-color: white; 
+    padding: 3% 5%;
+}
+.profile-container{ 
+    color: white;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; 
+    padding: 5%; 
+    position: absolute;
+    bottom: 0;
+} 
+
+/* kung anong widthn ng sidebar mo ganon din ang margin ng main container mo */
+.main-container{ 
+    margin: 0;
+    margin-left: 20%;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo</title> 
+
+    <!-- CSS Pseudo Classes 
+     Adds style to special states of an element. 
+     Such as hover, click, disabled and etc.
+     We can use pseudo classes by adding it after a selector.--> 
+
+     <!-- Common Pseudo Classes.
+      1. :hover - Mouse Over State. 
+      2. :active - Clicked / Active Links.
+      3. :focus - Focused on fields. 
+      4. :checked - Selected Radiobpxes and Checkboxes. 
+      5. :disabled - Disabled Inputs/Buttons. 
+      Full Pseudo Class List link: https://www.w3schools.com/css/css_pseudo_classes.asp--> 
+    
+      <!-- CSS Transitions.
+       Adds a smooth transition in between style changes.
+       Provide timing-functio for the transition. --> 
+       <!-- CSS Timing Functions Selectors
+        1. ease - Slow-Fast-Slow.
+        2. linear - Linear Speed. 
+        3. ease-in - Slow-Fast.
+        4. ease-out - Fast-Slow
+        5. ease-in-out - Slow.
+        6. cubic-bezier - Define own valuee. -->
+      <style>
+         button{ 
+            background-color: tomato;
+         }
+         /* pag tinapatan mo ng mouse magiging red ang kulay  */
+         button:hover{ 
+            background-color: red; 
+            color: white;
+         } 
+         /* pag clinick yung link magigigng blue ang kulay */
+         button:active{ 
+            background-color: blue;
+            color: rgb(201, 211, 60); 
+         } 
+       
+         #disabledbutton{ 
+            background-color: rgb(0, 100, 0); 
+            color: white;
+         }  
+         /* pwede mo pa labuan yung disabled button */
+         #disabledbutton:disabled{ 
+            opacity: 0.3;
+         }  
+         /* pag clinick mo yung input mag-iiba yung style niya depende sa sinet mo.  */
+         input:focus { 
+            background-color: rgb(128, 206, 128);
+            border: solid 1px pink; 
+            outline: none;
+         } 
+         /* kung maseselect mo yung box na yon magti-trigger tong style nato */
+         #checked:checked{ 
+            scale:2.5;
+         }
+        #radio:checked{ 
+            scale:2.5;
+         }
+         /* Transition */ 
+     
+         #transition-normal{ 
+            background-color: tomato; 
+            transition: 1s;
+            width: 100px;
+         } 
+         #transition-normal:hover{ 
+            background-color: black;
+            width: 200px;
+         }
+
+             /* Kailangan mayroon siya pagtransitionan. Kunware sa normal button set ka ng width: 100px, doon naman sa hover set ka rin ng width para gumana if gusto mo transition */
+
+         #separate-transition{ 
+            background-color: yellow;  
+            width: 100px; 
+            /* pwede mo iset ang transition ng hiwalay  */ 
+            transition: width 3s, background-color 3s; 
+          
+         }
+         #separate-transition:hover{
+            background-color: blue;
+            width: 200px;
+         } 
+         #delay-transition{ 
+                    background-color: yellow;  
+            width: 100px; 
+            /* pwede ka maglagay ng delay */
+            /* transition: duration delay; */
+            transition: width 3s 1s, background-color 3s 1s; 
+         }
+
+             #delay-transition:hover{
+            background-color: blue;
+            width: 200px;
+         }     
+
+         #ease-transition{ 
+            background-color: tomato;
+            width: 100px; 
+            transition: ease 1s;
+         } 
+         #ease-transition:hover{ 
+            background-color: blue;
+            width: 200px;
+         }
+         #linear-transition{ 
+            background-color: tomato;
+            width: 100px; 
+            transition: linear 1s ; 
+         }
+          #linear-transition:hover{ 
+            background-color: blue;
+            width: 200px; 
+          
+         }  
+         /* transition:property druation timing delay */
+         #short-hand{ 
+            background-color: rgb(18, 119, 134); 
+            width: 100px;
+            transition: linear 2s 1s;
+         } 
+         #short-hand:hover{ 
+            background-color: rgb(69, 124, 131); 
+            width: 300px;
+            
+         }
+      </style> 
+</head>
+<body>
+     <button>Enabled Button</button> 
+    <br> <br>
+     <button id="disabledbutton" disabled>Disabled Button</button> 
+     <br><br> 
+
+    <input type="text" placeholder="Example of Focus">
+    <br><br>
+    
+    <input type="checkbox" id="checked"/>
+    <label for="checked">Checked</label> 
+ <br> <br>
+
+    <input type="radio" id="radio"/>
+    <label for="radio">Radio</label>
+    <br><br> 
+    
+   <button id="no-transition">No transition
+    </button>  <br> <br>
+
+    <button id="transition-normal">Transition Normal
+    </button> 
+    <br><br>
+   <button id="separate-transition">Separate Transition
+    </button>  
+    <br> <br>
+      <button id="delay-transition">Delay Transition
+      </button> 
+           <br> <br>
+      <button id="ease-transition">Ease Transition
+    </button> 
+       <br> <br>
+      <button id="linear-transition">Linear Transition
+    </button>  
+
+        <br> <br>
+      <button id="short-hand">Shorthand </button> 
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display and Visibility</title> 
+    <!-- Indicates the display behavior of an element --> 
+     <!-- Display Values. 
+      1. block - Takes up full width and starts in a new line.   
+                - Isang example ng element na may default na ganitong display ay ang <p> tag or ang paragraph tag.
+      2, none - Removes element from layout. 
+      3. inline- Takes up content width (no affetected by Width and Height).
+                - Kung ano lang laman ng element mo  hanggang doon lang yung width mo, kahit pa maglagay ka pa ng gusto mong size.
+      4. inline-block - Takes up content width (affected by Width and Height). 
+                     - Dito ay same sa inline kaso dito pwede ka magset ng height, width, margin, or kahit ano pa man.
+      5. flex - Flex Container. 
+      6. grip - Grid Container. --> 
+    
+      <!-- CSS Visibility
+       - Indicates the visibility of an element. 
+        Elements will always take up space in the layout.  
+        Kahit naka hide siya or hindi visible makikita mo pa rin na may element don naka hide lang siya
+        -----------------Values------------
+        visible - Element is visible(default). 
+        hidden - Element is invisible (take up sapce)-->
+    <style>
+        p{
+            background-color: red;   
+
+            /* if ilalagay mo naman ang inline, ang size niya ay nagbabase sa lang sa text mo */
+            /* display: inline; */
+        }   
+        h1{ 
+            background-color: red; 
+            /* If ilalagay mo itong display: none; mawaala yung buong div na yon or yung buong element */ 
+            /* pwede mo siya gamitin if may iha-hide kang element temporarily */
+            /* display: none; */ 
+        }
+        span { 
+            background-color:  red;  
+            /* if ilalalgay ko tong displaY:block  sasakopin niya na rin yung full width kagaya ng <p> tag */
+            /* display: block; */ 
+        } 
+
+        /* Ang inline kahit maglagay ka ng size, hindi niya mababago; Ang inline-block pag naglagay ka ng size or kahit anong magpapabago sa design, okay lang babaguhin niya. */
+        .inline{ 
+            display: inline; 
+            width: 200px;
+        } 
+        .inline-block{ 
+            display: inline-block;
+            width: 200px;
+        } 
+ 
+        /* Example of Inline */  
+        /* Ang kagandahan sa inline ay kusang bumababa yung isang container pag nasakop niya nayung isang width */
+        .container{ 
+            width: 200px;  
+            height: 200px;
+            background-color: tomato;  
+            margin-top: 10px ;  
+            /* sa una kasi mag kaiba sila ng line, container 2 ay na sa ibaba ng container 1*/
+            display: inline-block;  
+       
+        } 
+        h2{ 
+            text-align: center;
+        } 
+        /* Ang pinagkaiba ng display:none; sa visibility:hidden; ay si display mone totally na nawawala yung isang element, ang visibility hidden is itatago niya lang yung data pero manaatili yung space ng element na yon */
+        #two{ 
+            visibility: hidden;
+        } 
+    </style>
+</head>
+<body>  
+    <!-- kung makikita mo rito sakop niya yung buong width kahit maikli lang yung text-->
+    <p>Block Example</p>
+     <br> 
+     <h1>Hide me</h1>
+<!-- Dito naman ay tumitigil siya yung hanggang saan lang yung text.-->
+    <span>Inlie example</span>   
+    <br>
+    <span class="inline">Inline</span> 
+    <br>
+    <span class="inline-block">Inline Block</span> 
+        <br> <br>
+
+    <div id="one" class="container"><h2>Container 1</h2></div>
+    <div id="two" class="container"><h2>Container 2</h2></div>  
+    <div id="three" class="container"><h2>Container 3</h2></div>
+    <div  id="four" class="container"><h2>Container 4</h2></div> 
+    <br>
+    
+    
+    
+
+
+</body>
+</html>

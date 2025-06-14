@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color and Units</title>
+</head>  
+    <!-- CSS Colors  -->
+    <!-- Colors Names (pre-defined)  
+         RGB(Red, Green, Blue).
+         RGBA (Red, Green, Blue, Alpha).
+         HSL (Hue, Saturation, Lightness).
+         HSLA (Hue, Saturation, Lightness, Alpha).
+         HEX--> 
+
+
+
+        <style>   
+        
+        /* Color Name example */ 
+        /* Color Name supports 140 colors*/ 
+        p{ 
+            font-size: 2vw;
+        } 
+        div{ 
+                    width: 20vh; 
+                height: 20vh;
+        }
+            #colorname{ 
+                background-color: tomato;
+        
+            }  
+        /* RGB Example */ 
+        /* Syntax - rgb(red, green, blue) */ 
+        /* value - 0 to 255 */
+            #rgb{ 
+                background-color: rgb(100, 255, 16);
+              
+            }  
+        /* RGBA Example */ 
+        /* Syntax - rgba ( red, gree, blue, alpha) */
+        /* values - 0 to 255 ang pwede sa RGB, ang Alpha naman ay mayroon lamang na value na 0 and 1 */ 
+        /* Alpha - ay isa siyang opacity or transparency. Pag binababaan natin ang alpha lumalabo rin ang makikita mo  */
+
+            #rgba{ 
+                background-color: rgba(100, 255, 16, 0.5);
+         
+            } 
+
+        /* HSL Example */
+        /* Syntax - hsl(hue, saturation, lighness) */ 
+        /* Values - 0 to 360 ang pwede i-set sa Hue. 0% to 100% naman sa Saturation at Lightness */ 
+        /* Saturation - 100 percent is light color, pag 0 is wala ng kulay */ 
+        /* Lightness - 100 percent  ay magiging color white or light. 0 percent ay dito ang dark*/
+            #hsl{
+                background-color: hsl(43, 50%, 50%);
+           
+            } 
+        /* HSLA Example */
+        /* Syntax - hsla (hue, saturation, lightness, alpha) */
+        /* Alpha is for transparency lang 0 and 1 ang value */ 
+
+          #hsla{
+                background-color: hsl(43, 50%, 50%, 0.6);
+               
+            }  
+        /* HEX example */
+        /* Syntax - #RRGGBB */ 
+        #hex{ 
+              background-color: #c56868;
+               
+        } 
+
+         /* <!-- CSS Units - These are used in sizes on CSSm such as the 'font-size', 'width', and 'height' 
+
+        We have 2 categories of Units:
+        Abosulete Legths and Relative Lenghts 
+        --> 
+        <!-- Absolute Lengths 
+        cm - centimeters. 
+        mm - milimeters.
+        in - inches - 1 in = 96px = 2.54 cm. 
+        px - pixels - 1px = 0.00104 in.
+        pt - points - 1pt = 0.013189 in. 
+        pc - picas -  1pc = 12pt. -->  */
+
+
+        /* <!-- Relative Lengths  - ginagamit ito para makagawa tayo ng responsive website.  
+        Responsive Website - nag-a-adjust yung itsura niya  depende sa screen size.
+
+        em - Relative to the font-size of the element. 
+        ex - Relative to the x-height o the current font. 
+        ch - Relative to the width of the character "O". 
+        rem - Relative to the font-size of the root element. 
+        vw - Relative to 1% of the width of the viewport. 
+        vh - Relative to 1% of the  height of the viewports.
+        vmin- Relative of 1% of the viewports * smaller dimension. 
+        vmax - Relative to 1% of viewports * larger dimension. 
+        % - Relative to the parent element.
+        --> */ 
+
+
+        .absolute{ 
+            font-size: 24px;
+        }  
+
+
+        /* sa vw - kung lumalaki yung width size ng screen mo, lumiliit naman yung size ng text mo */
+        #relativevw{ 
+            font-size: 5vw;
+        }
+          /* sa vw - kung lumalaki yung height size ng screen mo, lumiliit naman yung size ng text mo */
+        
+         #relativevh{ 
+            font-size: 5vh;
+        } 
+        /* rem and em ang pinakagamit sa font size natin */ 
+        /* ang em ay kinukuha yung parent niya  and dun babase yung font size niya*/  
+        /* kung ang relativebody ay ang parent, dito babase ang relativeem natin */ 
+        /* 24 px times 1 */
+        #relativeembody{ 
+            font-size: 24px;
+        }
+        #relativeem{ 
+          font-size: 1em;
+        } 
+
+        /* sa rem namn ay ang mumultiply niya is yung root element. kung nagset ka ng style na font-size sa <html> tag mo, ito yung imumultiply niya lasi siya yung root element */ 
+
+        #relativepercent{ 
+           width: 50%; 
+            background: #c56868;
+        }
+        </style>
+
+
+ <body> 
+   
+    <div id="colorname"> 
+        <p>Color Name Example</p> </div> 
+    
+    <div id="rgb">  
+        <p>RGB Example</p>
+    </div>  
+
+    <div id="rgba"> 
+          <p>RGBA Example</p>
+    </div>   
+
+     <div id="hsl"> 
+          <p>HSL Example</p> 
+    </div>   
+    <p>Hue reference</p> 
+    <p>Example nito ay if 43 ang hue mo, ang magiging kulay ay kulay orange</p>
+    <img src="Color Wheel.JPG" alt="color wheel"> 
+
+    
+     <div id="hsla"> 
+          <p>HSLA Example</p> 
+    </div>   
+
+    
+     <div id="hex"> 
+          <p>Hex Example</p> 
+    </div>   
+    
+
+    
+    <p>Example of Absolute Length</p>  
+    <p class="absolute">Absolute</p> 
+
+    <p>Example of Relative Length VW</p> 
+    <div id="relativevw">Relative VW</div>  
+
+    <p id="relativevh">Relative VH</p>  
+     
+    <div id="relativeembody"> 
+            <p id="relativeem">Relative EM</p> 
+    </div>
+    <br> <br>
+    <p>Example of Relative Length %</p>
+    <div id="relativepercent"></div> 
+    
+</body>
+</html>

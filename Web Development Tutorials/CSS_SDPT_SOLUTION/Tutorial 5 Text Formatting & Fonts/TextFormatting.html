@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Fomartting</title>  
+
+        <!-- TEXT FORMATTING -->
+        <!-- 1. Text Appearances --> 
+        <!-- Text Appearcance Properties.
+             color - Changes the color of the text. 
+              text-transform - Changes the letter cases of the text. 
+              text-shadow - Adds a shadow effect on the text.   --> 
+
+       <!-- 2. Text Alignment  --> 
+       <!-- Text Alignment Properties.
+             text-align - Changes the alignment of the text.
+             text-align-last - Changes the alignment on the last line of the text.  --> 
+        <!-- 3. Text Spacig  --> 
+        <!-- Text Spacing Properties.
+            text-indent - Adds an indetation on the first line of the text. 
+             letter-spacing - Changes the spacing between the letters. 
+             word-spacing - Changes the spacing between the words.
+             line-height - Changes the spacing between lines. 
+             white-space - Indicates the behavior of the whitespaces when the text overflow. --> 
+
+    
+     <style> 
+     /* color example */
+        #color-example{ 
+            color: tomato;
+        } 
+    /* text-transform */ 
+    /* upppercase - gagawin niyang capital letter lahat*/  
+    #uppercase{ 
+        text-transform: uppercase;
+    } 
+    /* lowercase- gagawin niyang small letter lahat */
+    #lowercase{ 
+        text-transform: lowercase;
+    } 
+    /* capitalize - kada space magiging capital letter lahat ng nasa first */
+    #capitalize { 
+        text-transform: capitalize; 
+        
+    }  
+
+     /* text-shadow 
+     Syntax - text-shadow: h-pos(horizontal-posistion) v-pos(vertical-position) blur color;
+    */ 
+    #shadow-example{ 
+                    /* h-pos| v-pos| blur| color*/
+        text-shadow:    4px   10px   2px rgb(22, 5, 27);
+    } 
+
+    /* text-alignemnt */
+    /* text-align */ 
+    /* the default is text-align: left;  */
+
+    /* text-alig-last */
+    /* dito last line lang yung maapektuhan */
+     
+    /* nasa left lahat ang umpisa */
+    .left { 
+        text-align: left; 
+        text-align-last: left; 
+    }  
+    /* sa right ang nag posisition ng text */
+    .right{ 
+        text-align: right; 
+        text-align-last: right;
+    } 
+    /* nakacenter ang text  or nakagitna ang text */
+    .center{ 
+        text-align: center; 
+         text-align-last: center;
+    } 
+    /* pantay-pantay ang text     
+        prang ganiton yan
+        parang ganito yan 
+        parang ganito yan
+    */
+    .justify{ 
+        text-align: justify; 
+        text-align-last: justify;
+    }  
+
+    /* Text Spacing */
+    /* lalagyan niya ng space sa unang word ng pragraph */
+    .text-indent{ 
+        text-indent: 50px;
+    }  
+    /* lalagyyan niya ng space kada letter */ 
+    .letter-spacing { 
+        letter-spacing: 4px;
+    } 
+    /* lalagyan niya ng space kada word */
+    .word-spacing{ 
+        word-spacing: 10px;
+    } 
+    /* spacing kada new line yung vertical margin nila */
+    .line-height{ 
+        line-height: 40px;
+    }   
+
+
+    /* white-space */ 
+    /* ibig sabihin nito  dere-deretso lang siya hindi siya mag new line */
+    .white-space-nowrap{ 
+        white-space: nowrap;
+    }  
+    /* normal ay nag-wra-wrap mag-isa. */
+    .white-space-normal{ 
+        white-space: normal;
+    }  
+    /* Lahat ng white space sinasama niya sa ouput*/
+    .white-space-pre{ 
+        white-space: pre;
+    }
+     </style>
+
+</head> 
+<body>
+
+        <p id="color-example">This is the example of Color</p>  
+         <br>
+        <h3>Properties of text-transform:</h3> 
+        <p id="uppercase" class="text-transform">This is the example of uppercase</p> 
+        <p id="lowercase"> This is the example of lowercase</p>
+        <p id="capitalize">This is the example of capitalize</p> 
+        <br>
+        <p id="shadow-example">This is the example of text-shadow</p> 
+        <br>
+
+        <h3>Properties of text-alignment:</h3>     
+        <h4>text-align:left; example</h4> 
+
+        <p>The default of text-alignment is on the left</p>
+        <p class="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias officiis corrupti quia sapiente numquam autem beatae quisquam ratione est. Corporis obcaecati quod accusamus. Tempora laboriosam ipsum soluta veniam vitae consectetur. </p> 
+
+        <h4>text-align:right; example</h4>
+        <p class="right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro possimus optio. Magni vel iure illo error sunt sequi soluta dolor a non natus. Eligendi tempore a obcaecati illo impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+
+        <h4>text-align:center; example</h4>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio ratione nihil delectus voluptatum similique, quae ducimus temporibus facere vel cumque incidunt recusandae pariatur earum aspernatur, doloribus reprehenderit illum hic.</p> 
+
+        <h4>text-align:justify; example</h4>
+        <p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae saepe repellat facere officia eum deleniti excepturi dolor. Minus, dolorem culpa distinctio porro voluptatem obcaecati </p>  
+
+        <h3>Properties of Text Spacing:</h3> 
+        <h4>text-index: 50px; example</h4>
+        <p class="text-indent"> This the example of text indet This the example of text indent This the example of text indetThis the example of text indet
+        </p> 
+        <h4>letter-spacing: 10px; example</h4>
+         <p class="letter-spacing"> This is the example of the letter-spacing. </p>  
+        <h4>word-spacing: 20px; example</h4>
+        <p class="word-spacing">This the example of word-spacing This the example of word-spacing </p> 
+        <h4>line-height: 40px example</h4>
+        <p class="line-height">This is the example of line height the example of line height the example of line height the example of line is here 
+            the example of line heeight is here 
+        </p>  
+        <h4>white-space: nowrap; example</h4>
+        <p class="white-space-nowrap">This is  the example of white-space This is the example of whitespace. This is example of white space.</p> 
+        
+         <h4>white-space: normal; example</h4>
+        <p class="white-space-normal">This is    the example of white-space This is the example of whitespace. This is example of white space.</p>  
+
+         <h4>white-space: pre; example</h4>
+        <p class="white-space-pre">This is  
+               the exmple
+                  of white-space This is the example of whitespace. This is example of white space.</p> 
+
+
+  
+        
+</body>
+</html>

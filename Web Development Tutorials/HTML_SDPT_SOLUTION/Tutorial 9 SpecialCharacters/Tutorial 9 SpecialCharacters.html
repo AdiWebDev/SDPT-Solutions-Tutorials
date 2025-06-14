@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Characters</title> 
+
+    <style>
+       table,tr, th, td{
+            border-width: 1px; 
+            border-color: black;
+            border-style: solid;
+        } 
+    </style>
+</head> 
+
+ 
+<body>
+    <!-- HTML Entities - Special Characters that are usually not accessible by the keayboard.  
+                        - It also used to dispaly reserved keywords from html like "<" and ">" symbol.
+                        - Displayes by using an ampersan "&" followed by an "entity name", entity number" or an "entity hexadecimal" and ending with a semicolon ";" 
+                        - Not all Entites have an Entity Name--> 
+    <!-- HTML Enties Example -->   
+        <!-- !!Not all Entites have an Entity Name
+            Non-breaking space - &nbsp;
+            Less than &lt;
+            Greater tghan &gt;
+            £ pound - &pound 
+            Yen - &yen; 
+            Euro - &euro; 
+            Cent - &cent;
+            Copyright - &copy;-->
+
+    <table>
+        <caption>HTML Entities Example</caption> 
+        <thead> 
+            <tr>
+                <th>Description</th>
+                <th>Entity Name</th>
+                <th>Entity Number</th>
+                <th>Entity Hex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Yen</td>
+                <td> &yen;50</td> 
+                <td>&#165;</td>
+                <td>&#xa5;</td>
+            </tr> 
+    
+        </tbody>
+    </table>
+
+    <!-- HTML Emojis - It looks like an icon but is actually a character, Emojis are characters from the UTF-8 charset.
+                    - Emojis are also enties so it accesses as same a the other HTML enties, although they din't have an "Entity Name"  
+                    - Para magamit ang emoji, ilagay sa head <meta charset="UTF-8">-->
+                        
+            <table>
+        <caption>HTML Emojis Example</caption> 
+        <thead> 
+            <tr>
+                <th>Description</th>
+                <th>Entity Number</th>
+                <th>Entity Hex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tears of Joy</td>
+                <td> &#128514;</td> 
+                <td>&#x1f602;</td>
+            </tr> 
+    
+        </tbody>
+    </table>
+</body>
+</html>

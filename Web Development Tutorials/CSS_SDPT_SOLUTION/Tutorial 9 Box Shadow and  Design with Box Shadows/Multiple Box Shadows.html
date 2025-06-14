@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Box Shadows</title> 
+    <!-- Isang website na makaktulong sa pag gawa mo ng box shadow ay ang "Box shadow generator"-->
+     <!-- Pwede mo lagyan ng inset shadow sa contanct us or sa mga information. 
+         Pwede ka rin maglagay ng shadow sa may input -->
+    <style>
+        .container{ 
+            height:200px;
+            width: 200px; 
+
+            
+            box-shadow: 2px 5px 5px 2px red, 
+            -2px -2px 5px 2px blue, 
+            2px -2px 5px 2px rgb(252, 255, 59);   
+            border-radius: 20px;   
+      } 
+
+      /* box shdw */ 
+      .backshadowgenerator{  
+        height: 200px;
+        width: 200px;
+        box-shadow: 53px 53px 45px -25px rgba(175,175,175,1);
+    -webkit-box-shadow: 53px 53px 45px -25px rgba(175,175,175,1);
+    -moz-box-shadow: 53px 53px 45px -25px rgba(175,175,175,1);
+      }
+    </style>
+</head> 
+
+<body>
+    <div class="container">Multiple</div>   <br>
+    <div class="backshadowgenerator">Box generator</div>
+
+</body>
+</html>

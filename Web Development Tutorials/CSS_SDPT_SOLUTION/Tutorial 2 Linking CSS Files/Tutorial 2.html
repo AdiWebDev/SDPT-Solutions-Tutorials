@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking CSS Files</title>
+</head>
+<body>
+     
+    <!-- Internal CSS --> 
+    <!-- CSS that used the <style> tag inside the HTML Dcoumnent--> 
+    <style>
+        h1{ 
+            color: blue;
+      }
+    </style> 
+    <h1>Internal CSS</h1> 
+
+    <!-- External CSS  --> 
+    <!-- Requires a separate CSS File and makes use of the <link> tag for us to be able to link the CSS File to our HTML Document.
+        We can reuse our CSS File over and over withour retyping anything. 
+        - Ang ibig sabihin nito ay kung gagamitin mo sa home ang css na iyon, pwede mo rin gamitin para sa about or ibang pang page mo. --> 
+        <link rel="stylesheet" href="style.css">
+      <p>External CSS</p> 
+      <a href="about.html">About</a>
+    <!-- Inline CSS -->
+     <!-- Fastest way to integrate styles to our HTML Document.
+      This can also make your code very hard to read so don;t use it unless you really need to. 
+        It uses the style attribute in all the elements--> 
+    <p style="font-size: 400%; color: green;">Inline CSS</p>
+</body>
+</html>

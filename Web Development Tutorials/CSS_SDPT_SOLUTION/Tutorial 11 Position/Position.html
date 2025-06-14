@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title> 
+
+    <!-- CSS Position - Indicates the position behavior element -->  
+     <!--CSS Position Values, 
+    1. static - Posistioned according to the flow of the page (default position);
+    2. fixed  - Positioned oN the same place even if scrolled. 
+    3. sticky - Sticks in position place when not in viewport.
+    4. absolute - Positioned relative to its positioned parent. 
+    5. relative - Position relative to its default position--> 
+    <!-- CSS Postioning Properties - Indicates the margin edges of a positioned element.
+                                    - This does not work with static positioned elements.-->
+
+    <!-- Values
+     1. top = Top edge margin for a positioned element. 
+     2. right - Right edge margin for a position element. 
+     3. bottom - Bottom edge margin for a positioned element. 
+     4. left - Left edge margin for a positioned element. --> 
+     <style>  
+     /* Nagsstay sa position kahit nag scorll ka na.*/ 
+     /* Ang fixed ay madalas gingamit sa navigation bar */
+          .fixed{ 
+            background-color: blue; 
+            position: fixed;  
+            top: 0;
+         }  
+    /* didikit sya if mawala siya sa viewport */
+    /* ang viewport kung ano yung nakikita natin sa screen */
+         .sticky{ 
+             background-color: tomato; 
+            position: fixed;  
+            top: 20%;
+         }  
+         /* pumapatong siya */ 
+         /* kung saan siya doon siya */ 
+         /* pinagbabasehan niya yung parent niya--si body. */ 
+         /* ang absolute ay may default na margin, kaya pwede mo iset ang margin muna sa 0 */
+    .absolute{ 
+        position: absolute; 
+        top: 100px;
+    
+    }  
+    /* ang pinagkaiba ng absolute at relative. ang absolute ay kusang nagseset pag naglagay tao nito. ang relative ay hinihintay niya maglagay ka ng value bago siya magbago ng position. parehas silang pumapatong. */ 
+    /* si absolute ay hindi sumunod sa flow natin */ 
+    /* si relative ay sumusunod sa flow natin */ 
+    /* Ang absolute ay sumunod sa may element na may relative, if wlaang ganon ang element na ito, susundin niya ang pinakaparent, which is yung body */ 
+    /* position: absolute will position itself relative to the nearest parent that has a position other than static (like relative, absolute, etc.). 
+    If no such parent exists, it will use the entire HTML page (<body>) as the reference. */ 
+    
+    .relative{ 
+        position: relative; 
+       top: 100px;
+    }  
+
+    .container{ 
+        height: 100px;
+        width: 200px; 
+        color: white;
+        background-color: black; 
+        position: relative;  
+        margin-bottom: 20px;
+    } 
+    h6{ 
+        position: absolute; 
+        right: 0; 
+        margin: 0; 
+        bottom: 0;
+    } 
+     </style>
+  
+    
+</head>
+<body>
+
+<!-- 
+        <p class="fixed">Fixed</p> <br>
+        <p class="sticky">Sticky</p>
+        <h1>Sticky</h1>
+        <h1>Sticky</h1>
+        <h1>Sticky</h1>
+        <h1>Sticky</h1> 
+     
+        <h1>Sticky</h1> 
+        <h1>Sticky</h1> 
+        <h1>Sticky</h1> 
+        <h1>Stich1</h1> 
+        <h1>Sticky</h1>  -->  
+        
+        <!-- <h1 class="absolute">Hello World</h1>   -->
+        
+        <!-- <h1 class="relative">Hello World</h1>  -->  
+        <!-- <h2>Hi world</h2>
+        <h2>Hi world</h2>  
+        <h2>Hi world</h2> 
+        <h2>Hi world</h2> 
+        <h2>Hi world</h2> 
+        <h2>Hi world</h2> 
+        <h2>Hi world</h2> 
+        <div class="container"><h6>Hi Guys</h6></div>
+        <div class="container"><h6>Hi Guys</h6></div>
+        <div class="container"><h6>Hi Guys</h6></div> -->
+          
+
+</body>
+</html>

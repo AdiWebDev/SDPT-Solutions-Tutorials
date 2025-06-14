@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Fonts</title>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <!-- FONTS --> 
+        <!-- Overall appearcance of a digital & printed text; It has certain style and can be changed accrodingly. -->  
+        <!-- Fonts Properties 
+            font-size - Changes the size of the text.
+            font-family - Changes the font of thet text. 
+            font-style - Changes the font style of thext text. 
+            font-weight - Changes the thickness of the font. 
+            font-variant - Indicates a variant of a font.
+            --> 
+
+        <!-- Custom Google Fonts --> 
+        <!-- We can add more fonts to our website by importing from google fonts --> 
+         <!-- https://fonts.google.com--> 
+
+         <!-- 2 Ways to Importing Google Fonts
+          1. Using the <link> tag on HTML. 
+          2. Using the @import on CSS-->     
+
+
+
+        <style> 
+        /* iniiba niya yung size ng text */
+        #font-size{ 
+            font-size: 10pt;
+        } 
+        
+        /* Iniiba niya yung font o yung style ng text mismo */ 
+        /* Dapat naka-install pati sa ibang computer na gagamitin niyo, kasi hindi ito gagana sa computer na hindi nakaintsall yung font na yon. */ 
+        /* Ang default font ng HTML ay times new roman */ 
+        /* Arial at Times New Roman ang sure na nakainstall sa lahat ng computer */
+        #font-family { 
+            font-family: "Courier New";
+        }  
+        p { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }   
+        /* font-style */
+        #font-style-normal{ 
+            font-style: normal;  
+           
+        } 
+        #font-style-italic{ 
+            font-style: italic;
+   
+        } 
+        /* ang oblique ay medyo naka tagilid or slant lnag */
+        #font-style-oblique{ 
+            font-style: oblique; 
+         
+        } 
+
+        /* font-varaint */
+        #font-variant-normal{ 
+            font-variant: normal;
+        } 
+        /* lahat ng small leter magiging capital siya pero di sila magkasing height ng mga naka capital letter */
+        #font-varaint-small-caps{ 
+            font-variant: small-caps;
+        } 
+        /* if di mahanap yung Ubuntu na font, gagamitin niya is yung sans-sefif na font. */ 
+
+
+    
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+
+        #custom-fonts{ 
+        font-family: "Edu SA Hand", cursive;
+        font-optical-sizing: auto;
+
+        font-style: normal;
+        }
+
+        /* font-weight */
+        #font-weight-light{
+            font-weight: 300;
+        }
+        #font-weight-normal{ 
+            font-weight: normal;
+        }
+        #font-weight-bold{ 
+            font-weight: bold;
+        }
+        #font-weight-black{ 
+            font-weight: 900;
+        }
+        </style>
+</head>
+<body> 
+    <h4>font-size: 20px; example:</h4>
+    <p id="font-size"> Hello</p> 
+    
+    <h4>font-family: Verdana; example</h4> 
+    <p id="font-family">Hello</p>  
+
+    <h4>Font Style Properties: </h4> 
+    <h5> font-style: normal; example</h5> 
+    <p id="font-style-normal">Hello</p>  
+
+    <h5> font-style: italic;example</h5> 
+    <p id="font-style-italic">Hello this is italic example</p>  
+
+    <h5> font-style: oblique; example</h5> 
+    <p id="font-style-oblique">Hello this is oblique example</p> 
+    
+    <h4>Font Variant Properties: </h4> 
+    <h5> font-variant: normal; example</h5> 
+    <p id="font-varaint-normal">Hello this is font variant normal example</p> 
+ 
+    <h5> font-variant: small-caps; example</h5> 
+    <p id="font-varaint-small-caps">Hello this is small caps example</p> 
+    
+     <h4>Custom Google Fonts Properties: </h4>  
+    <p id="custom-fonts">This is the example of custom fonts this is Edu SA Hand</p>  
+
+    <h4>font-weight properties:</h4> 
+    <h5> font-weight: 300; example:</h5> 
+    <p id="font-weight-light">Font Weight Light</p>
+
+    <h5> font-weight: normal; example:</h5> 
+    <p id="font-weight-normal">Font Weight Normal</p> 
+
+    <h5> font-weight: bold; example:</h5> 
+    <p id="font-weight-bold">Font Weight Bold</p>
+
+    <h5> font-weight: 900; example:</h5> 
+    <p id="font-weight-black">Font Weight Black</p> 
+</body>
+</html>
