@@ -4,5 +4,5 @@
 /**
  * 
  */
-module ExerciseniAdi {
+module Adi_Exercises {
 }
